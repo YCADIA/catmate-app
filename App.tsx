@@ -24,6 +24,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {NavigationContainer} from "@react-navigation/native";
+import HomepageNavigator from "./src/navigators/HomepageNavigator";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -36,9 +38,11 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView>
-      <Text>Catmate</Text>
-    </SafeAreaView>
+      <NavigationContainer>
+        <SafeAreaView style={{flex: 1}}>
+          <HomepageNavigator/>
+        </SafeAreaView>
+      </NavigationContainer>
   );
 }
 
