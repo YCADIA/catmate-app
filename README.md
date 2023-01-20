@@ -29,7 +29,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<--
+<!--
 <div align="center">
     <a href="https://github.com/kurashyna/mon-ecologie-app">
         <img src="Sprite-0001.png" alt="Logo" width="80" height="80">
@@ -240,7 +240,7 @@ Project Link: [https://github.com/YCADIA/catmate-app](https://github.com/YCADIA/
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
-[linkedin-url]: https://linkedin.com/in/lucas-le-menn-82493422b/
+[linkedin-url]: https://www.linkedin.com/company/ycadia/
 
 [product-screenshot]: images/screenshot.png
 
