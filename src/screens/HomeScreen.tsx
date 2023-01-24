@@ -1,14 +1,20 @@
-import React from "react";
-import {Image, ScrollView, Text, View} from "react-native";
-import {Dimensions} from 'react-native';
+import React, {useState} from "react";
+import {Dimensions, ScrollView, Text} from "react-native";
 
-const HomeScreen = () => {
-    const windowWidth = Dimensions.get('window').width;
-    const windowHeight = Dimensions.get('window').height;
+const HomeScreen : React.FC = () => {
+    const userName : [undefined, React.Dispatch<React.SetStateAction<any>>] = useState(undefined);
+    let welcomeMessage: string;
+    const windowWidth : number = Dimensions.get('window').width;
+    const windowHeight : number = Dimensions.get('window').height;
 
+    if (userName[0] === undefined) {
+        welcomeMessage = 'Bienvenue sur Catmate !';
+    } else {
+        welcomeMessage = `Bienvenue ${userName[0]}`;
+    }
     return (
         <ScrollView style={{flex: 1}}>
-            <Image style={{width: windowWidth, resizeMode: 'contain'}} source={require('../assets/catmate-long.png')}  />
+            <Text> {welcomeMessage} </Text>
         </ScrollView>
     )
 
