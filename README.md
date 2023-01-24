@@ -230,7 +230,7 @@ Project Link: [https://github.com/YCADIA/catmate-app](https://github.com/YCADIA/
 
 [stars-url]: https://github.com/ycadia/catmate-app/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/ycadia/catmate-app/.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/ycadia/catmate-app.svg?style=for-the-badge
 
 [issues-url]: https://github.com/ycadia/catmate-app/issues
 
