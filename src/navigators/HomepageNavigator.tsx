@@ -24,15 +24,25 @@ function HomepageNavigator() : JSX.Element {
 
     return(
         <Tab.Navigator initialRouteName={'Accueil'}>
-            <Tab.Screen name={'Accueil'} component={HomeScreen} options={{ title: 'Catmate',
+            <Tab.Screen name={'Home'} component={HomeScreen} options={{ title: 'Catmate',
                 tabBarLabel:'Home',
                 tabBarIcon:() => (
-                    <Ionicons name="ios-home-sharp" size={28}/>
+                    <Ionicons name="ios-home-sharp" size={26    }/>
                 ) }}/>
-            <Tab.Screen name={'Paramètres'} component={TestComponent} options={{ title: 'Catmate',
-                tabBarLabel:'Paramètres',
+            <Tab.Screen name={'Litters'} component={HomeScreen} options={{ title: 'Mes Portées',
+                tabBarLabel:'Portées',
                 tabBarIcon:() => (
-                    <Ionicons name="settings-sharp" size={28}/>
+                    <Ionicons name="file-tray-sharp" size={26}/>
+                ) }}/>
+            <Tab.Screen name={'Stats'} component={HomeScreen} options={{ title: 'Statistiques',
+                tabBarLabel:'Statistiques',
+                tabBarIcon:() => (
+                    <Ionicons name="ios-analytics-sharp" size={26}/>
+                ) }}/>
+            <Tab.Screen name={'Profile'} component={TestComponent} options={{ title: 'Profil',
+                tabBarLabel:'Profil',
+                tabBarIcon:() => (
+                    <Ionicons name="ios-person-circle-sharp" size={26}/>
                 ) }}/>
         </Tab.Navigator>
     )
